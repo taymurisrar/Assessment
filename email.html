@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Email Newsletter Template</title>
+    <title>Email Newsletter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         :root {
@@ -52,11 +52,16 @@
         }
 
         .banner h1 {
+            padding: 10px 5px;
             font-weight: 600;
             font-size: 28px;
             color: var(--white);
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
             z-index: 10;
+        }
+
+        .banner a{
+            margin-bottom: 30px;
         }
 
         .button {
@@ -218,13 +223,6 @@
             color: var(--purple);
         }
 
-        .unlknow {
-            padding: 100px 30px;
-            background-image: url('https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-6/290320109_993451994672890_6928748305056770558_n.png?_nc_cat=107&ccb=1-7&_nc_sid=2c4854&_nc_ohc=4Xf3HYHGKpgAX_LXxLQ&_nc_ht=scontent.fkhi17-1.fna&oh=00_AfAr_dUvRd_xEmuaMGOmCj3meHFByC2Te4ftkSXMdR5QoA&oe=64231425');
-            background-size: cover;
-            background-position: center;
-        }
-
         @media (max-width:480px) {
             .banner h1 {
                 font-size: 26px;
@@ -257,8 +255,14 @@
             }
         }
 
-        /* @media (min-width:600px)  { } */
-        @media (min-width:801px) {}
+        @media (max-width:801px) {
+            .product{
+                max-width: 220px;
+            }
+            .website-text{
+                padding-left: 20px;
+            }
+        }
     </style>
 </head>
 
