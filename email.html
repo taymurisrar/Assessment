@@ -78,22 +78,23 @@
             border: none;
         }
 
-        .purple{
-            
-            background-color: var(--theme) !important; 
+        .purple {
+
+            background-color: var(--theme) !important;
             color: var(--white);
             border: none;
             font-size: 15px;
         }
 
-        .purple:hover{
+        .purple:hover {
             background-color: var(--purple) !important;
         }
 
-        .small{
-padding: 10px 35px !important;
-width: 25%;
+        .small {
+            padding: 10px 35px !important;
+            width: 25%;
         }
+
         .description p {
             font-weight: 400;
             font-size: 18px;
@@ -104,7 +105,7 @@ width: 25%;
         }
 
         .description h3 {
-            padding-bottom: 25px;
+            padding: 0 15px 10px;
             font-weight: 600;
             font-size: 20px;
             margin: 0;
@@ -223,6 +224,41 @@ width: 25%;
             background-size: cover;
             background-position: center;
         }
+
+        @media (max-width:480px) {
+            .banner h1 {
+                font-size: 26px;
+            }
+
+            .button {
+                padding: 15px 30px;
+            }
+
+            .description h3 {
+                font-size: 26px;
+            }
+
+            .product {
+                max-width: 320px;
+                margin: 15px;
+            }
+
+            .website-text{
+                padding-left: 20px;
+            }
+
+            .website-text a{
+                width: 45%;
+            }
+
+            .footer p {
+                line-height: 20px;
+                padding: 15px 40px;
+            }
+        }
+
+        /* @media (min-width:600px)  { } */
+        @media (min-width:801px) {}
     </style>
 </head>
 
@@ -314,7 +350,7 @@ width: 25%;
 
                 <h4>
                     Please refer to our Store Locator to find your nearest Sprouts location!</h4>
-                <a style="float: left;" href="" class="buttonz small">Store Locator</a>
+                <a style="float: left;" href="" class="button small">Store Locator</a>
             </td>
             <td>
             </td>
@@ -332,25 +368,15 @@ width: 25%;
             </td>
         </tr>
 
-        <tr>
-            <td align="center" valign="top">
-                <table border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td valign="middle">
-                            <div style="display: block;width:100%;height: 1px;background-color: #d5d5d5;"></div>
-                        </td>
-                    </tr>
-                    <tr class="footer">
-                        <td valign="middle" align="center">
-                            <p>This email was sent to you by Trustrx. If you no longer wish to receive these emails, you
-                                can
-                                <a href=""> unsubscribe here.</a>
-                            </p>
-                        </td>
-                    </tr>
-                </table>
+        <tr class="footer">
+            <td valign="middle" align="center">
+                <p>This email was sent to you by Trustrx. If you no longer wish to receive these emails, you
+                    can
+                    <a href=""> unsubscribe here.</a>
+                </p>
             </td>
         </tr>
+
     </table>
 
 </body>
