@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email Newsletter Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --background: #F2EEFF;
+            --black: #290037;
+            --theme: #8E5396;
+            --purple: #534580;
+        }
+
+        body {
+            background-color: #e3e3e3;
+            font-family: 'Open Sans';
+        }
+
+        table {
+            max-width: 600px;
+            width: 100%;
+            background-color: var(--background);
+            text-align: center;
+        }
+
+        .header {
+            background-color: var(--white);
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .header h2 {
+            margin: 0;
+            color: var(--black);
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .banner {
+            background: linear-gradient(133.42deg, #8FC9FF 0%, #BECFF0 28.91%, #9E93E3 55.24%, #9BA1FB 78.47%, #E0F0FF 99.11%);
+        }
+
+        .banner img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        .banner h1 {
+            font-weight: 600;
+            font-size: 28px;
+            color: var(--white);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+            z-index: 10;
+        }
+
+        .button {
+            display: inline-block;
+            max-width: 210px;
+            width: 70%;
+            border: 1px solid var(--black);
+            padding: 15px 75px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--black);
+            margin-bottom: 15px;
+        }
+
+        .button:hover {
+            background-color: var(--theme);
+            color: var(--white);
+            border: none;
+        }
+
+        .purple{
+            
+            background-color: var(--theme) !important; 
+            color: var(--white);
+            border: none;
+            font-size: 15px;
+        }
+
+        .purple:hover{
+            background-color: var(--purple) !important;
+        }
+
+        .small{
+padding: 10px 35px !important;
+width: 25%;
+        }
+        .description p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: var(--black);
+            padding: 25px 35px;
+            margin: 0;
+        }
+
+        .description h3 {
+            padding-bottom: 25px;
+            font-weight: 600;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .product {
+            display: inline-block;
+            max-width: 260px;
+            width: 100%;
+            background-color: var(--white);
+            margin: 10px;
+        }
+
+        .product img {
+            max-width: 268px;
+            width: 100%;
+        }
+
+        .product h2 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: var(--black);
+        }
+
+        .product a {
+            font-size: 14px;
+            padding: 10px 20px
+        }
+
+        .store-banner td {
+            background-image: url('https://trustrx.us/wp-content/uploads/2023/03/B-1.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .store-banner h4 {
+            width: 50%;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            display: flex;
+            text-align: left;
+            color: var(--black);
+        }
+
+        .website-section {
+            display: flex;
+            padding: 2rem 0;
+            align-items: center;
+        }
+
+        .website-section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .website-mock {
+            flex: 40%;
+        }
+
+        .website-text {
+            float: left;
+            flex: 60%;
+        }
+
+        .website-text h4 {
+            font-weight: 500;
+            font-size: 14px;
+            text-align: left;
+            line-height: 19px;
+            color: var(--black);
+        }
+
+        .laptop {
+            position: absolute;
+            padding-top: 2rem;
+            z-index: 1;
+            max-width: 210px;
+        }
+
+        .boosters {
+            position: relative;
+            z-index: 2;
+            max-width: 190px;
+            left: 75px;
+        }
+
+        .footer {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        .footer p {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            padding: 25px 60px;
+            margin: 0;
+        }
+
+        .footer a {
+            color: var(--theme);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            color: var(--purple);
+        }
+
+        .unlknow {
+            padding: 100px 30px;
+            background-image: url('https://scontent.fkhi17-1.fna.fbcdn.net/v/t39.30808-6/290320109_993451994672890_6928748305056770558_n.png?_nc_cat=107&ccb=1-7&_nc_sid=2c4854&_nc_ohc=4Xf3HYHGKpgAX_LXxLQ&_nc_ht=scontent.fkhi17-1.fna&oh=00_AfAr_dUvRd_xEmuaMGOmCj3meHFByC2Te4ftkSXMdR5QoA&oe=64231425');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="0" cellpadding="0" cellspacing="0" align="center">
+        <tr>
+            <td class="header">
+                <h2>
+                    RETAIL ANNOUNCEMENT
+                </h2>
+            </td>
+        </tr>
+        <tr class="banner">
+            <td style="" align="center" valign="middle">
+                <h1>FIND TRUSTRX IN A SPROUTS FARMERS MARKET NEAR YOU!</h1>
+                <img src="https://trustrx.us/wp-content/uploads/2023/03/Illustrations.png" alt="">
+                <a href="" class="button purple">Store Locator</a>
+            </td>
+        </tr>
+        <tr class="description">
+            <td>
+                <p>Not only can you order our plant-based hair care products online, but now you can find
+                    them in a Sprouts location near you! We are working hard to line the shelves with our
+                    products so that our customers can kiss those bad hair days goodbye, once and for all.</p>
+                <h3>Find These Must-Have Products in Store</h3>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="middle">
+                <table border="0" cellpadding="0" cellspacing="0"
+                    style="width: 100%;padding: 15px; text-align: center;">
+                    <tr>
+
+                        <td class="product" align="center">
+                            <img
+                                src="https://trustrx.us/wp-content/uploads/2021/08/TrustRx_Shampoo_PUMP_2022_AMBER_FRONT_r11.png">
+                            <h2>UNIVERSAL HYDRATING SHAMPOO</h2>
+                            <a href="" class="button">SHOP NOW</a>
+                        </td>
+
+                        <td class="product" align="center">
+                            <img
+                                src="https://trustrx.us/wp-content/uploads/2021/08/TrustRx_Conditioner_PUMP_2022_AMBER_FRONT_r11.png">
+                            <h2>UNIVERSAL HYDRATING CONDITIONER</h2>
+                            <a href="" class="button">SHOP NOW</a>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td class="product" align="center">
+                            <img
+                                src="https://trustrx.us/wp-content/uploads/2020/12/TrustRx_Booster_PUMP_Scalps_BFF_2022_AMBER_FRONT_r11-461x461.png">
+                            <h2>SCALP’S BFF BOOSTER</h2>
+                            <a href="" class="button">SHOP NOW</a>
+                        </td>
+
+                        <td class="product" align="center">
+                            <img
+                                src="https://trustrx.us/wp-content/uploads/2021/08/TrustRx_Booster_PUMP_Frizz_Fighter_2022_AMBER_FRONT_r11-461x461.png">
+                            <h2>FRIZZ FIGHTER BOOSTER</h2>
+                            <a href="" class="button">SHOP NOW</a>
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td class="product" align="center">
+                            <img
+                                src="https://trustrx.us/wp-content/uploads/2021/08/TrustRx_Booster_PUMP_The_Heat_is_On_2022_AMBER_FRONT_r11-461x461.png">
+                            <h2>HEAT IS ON BOOSTER</h2>
+                            <a href="" class="button">SHOP NOW</a>
+                        </td>
+
+                        <td class="product" align="center">
+                            <img
+                                src="https://trustrx.us/wp-content/uploads/2021/08/TrustRx_Booster_PUMP_Kinky_Curly_Love_2022_AMBER_FRONT_r21-461x461.png">
+                            <h2>KINKY CURLY LOVE BOOSTER</h2>
+                            <a href="" class="button">SHOP NOW</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr class="store-banner">
+
+            <td style="padding:100px 30px;">
+
+                <h4>
+                    Please refer to our Store Locator to find your nearest Sprouts location!</h4>
+                <a style="float: left;" href="" class="button purple small">Store Locator</a>
+            </td>
+            <td>
+            </td>
+        </tr>
+
+        <tr class="website-section">
+
+            <td class="website-mock">
+                <img class="laptop" src="laptop.png" alt="">
+                <img class="boosters" src="boosters.gif" alt="">
+            </td>
+            <td class="website-text">
+                <h4>If you don’t have a Sprouts in your area, you can always order directly from our website!</h4>
+                <a style="float: left;" href="" class="button purple small">Shop now</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td valign="middle">
+                            <div style="display: block;width:100%;height: 1px;background-color: #d5d5d5;"></div>
+                        </td>
+                    </tr>
+                    <tr class="footer">
+                        <td valign="middle" align="center">
+                            <p>This email was sent to you by Trustrx. If you no longer wish to receive these emails, you
+                                can
+                                <a href=""> unsubscribe here.</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
